@@ -12,7 +12,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-   Widget  bodyWidget = Container();
+  Widget bodyWidget = Container();
   List<BNBItem> bnbItems = [
     BNBItem("Home", Icons.home),
     BNBItem("Sell", Icons.plus_one),
@@ -43,6 +43,7 @@ class _HomePageState extends State<HomePage> {
               break;
             case 1:
               pushRoute(context, SellPage());
+
               break;
             case 2:
               setState(() {
@@ -65,8 +66,10 @@ class _HomePageState extends State<HomePage> {
         items: List.generate(
           bnbItems.length,
           (index) => BottomNavigationBarItem(
-            label: index.toString(),
-            icon: Icon(bnbItems[index].icon),
+            label: bnbItems[index].title,
+            icon: Icon(
+              bnbItems[index].icon,
+            ),
             // title: Text(bnbItems[index].title),
           ),
         ),

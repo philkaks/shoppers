@@ -63,7 +63,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                   verticalSpace(height: 16),
                   Text(
-                    "Mr Kings Benjamin",
+                    "Mr Nyombi Cedric",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 24,
