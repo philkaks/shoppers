@@ -1,4 +1,4 @@
-# jiji_clone
+# shoppers
 
 A new Flutter project.
 
